@@ -1,0 +1,38 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  "position": "top",
+  "height": 42,
+  // "width": 1200,
+  "spacing": 4,
+
+  "modules-left": [
+    "custom/arch",
+    "hyprland/worspaces"
+    //"hyprland/worspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+    //"time"
+    //"hyprland/worspaces"
+
+    //"clock"
+  ],
+
+  "modules-right": [
+//    "idle_inhibitor",
+    "pulseaudio",
+    //"pilseaudio",
+    "network",
+    "temperature",
+    "hyprland/language",
+    "battery",
+    "battery#bat2",
+    "clock"
+  ],
+
+  "include": [
+    "~/.config/waybar/modules.json"
+  ]
+}
+
