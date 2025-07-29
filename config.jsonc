@@ -8,27 +8,23 @@
 
   "modules-left": [
     "custom/arch",
-    "hyprland/worspaces"
+    "hyprland/worspaces",
+    "clock",
+    "sway/workspaces"
     //"hyprland/worspaces"
   ],
   "modules-center": [
     "hyprland/window"
-    //"time"
-    //"hyprland/worspaces"
-
-    //"clock"
   ],
 
   "modules-right": [
-//    "idle_inhibitor",
     "pulseaudio",
-    //"pilseaudio",
     "network",
     "temperature",
     "hyprland/language",
     "battery",
     "battery#bat2",
-    "clock"
+    "custom/ethernet"
   ],
 
   "include": [

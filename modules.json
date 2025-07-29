@@ -1,9 +1,26 @@
 {
     "custom/arch": {
-        "format": "󰣇",
-        "tooltip": true,
-        "tooltip-format": "btw"
+        "format": "🌈",
+        /*"tooltip": true,*/
+        /*"tooltip-format": "btw"*/
     },
+
+      "sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{name}: {icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
 
 
     "hyprland/workspaces": {
@@ -37,12 +54,15 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-wifi": " ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "  {essid} ({signalStrength}%)",
+
+        "on-click":"~/.config/waybar/scripts/network.sh"
+        //"on-click": "nm-connection-editor"
     },
 
     "temperature": {
