@@ -1,6 +1,6 @@
 {
     "custom/arch": {
-        "format": "🌈",
+        "format": "♨",
         /*"tooltip": true,*/
         /*"tooltip-format": "btw"*/
     },
@@ -34,6 +34,12 @@
             "default": ""
         }
     },
+    "custom/notifications": {
+      "exec": "count=$(makoctl list | grep '^Notification' | wc -l); if [ \"$count\" -gt 0 ]; then echo -e '\\nDismiss Notifications\\n'; else echo -e '\\nNo Notifications\\nnone'; fi",
+      "format": "{}",
+      "on-click": "makoctl dismiss -a",
+      "interval": 3,
+    },
     "pulseaudio":{
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
@@ -65,7 +71,7 @@
         //"on-click": "nm-connection-editor"
     },
 
-    "temperature": {
+    "temperature":{
 
         "interval": 10,
         "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",

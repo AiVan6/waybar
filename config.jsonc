@@ -18,6 +18,7 @@
   ],
 
   "modules-right": [
+    "custom/notifications",
     "pulseaudio",
     "network",
     "temperature",
